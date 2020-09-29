@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://world/nature/treeforava.png" type="Texture" id=1]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 3.81261
+height = 9.54527
+
+[node name="tree" type="Sprite"]
+position = Vector2( -0.595276, -0.843306 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -35 )
+region_enabled = true
+region_rect = Rect2( 0, 30, 70, 100 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -0.993233, -2.75083 )
+rotation = 1.5708
+shape = SubResource( 1 )
