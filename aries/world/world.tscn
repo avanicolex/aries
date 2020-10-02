@@ -7,7 +7,7 @@
 [node name="world" type="Node2D"]
 
 [node name="environment" type="Sprite" parent="."]
-position = Vector2( 160.124, 90 )
+position = Vector2( 160.439, 90.315 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 320, 180 )
